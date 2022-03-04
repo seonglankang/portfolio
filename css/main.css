@@ -1,0 +1,308 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+html, body{
+    color: #333;
+}
+header {
+    height: 80px;
+    line-height: 80px;/* 텍스트한줄일때만 가운데 적용, 이미지로고일 때는 height 100%, position relative 이용 */
+}
+header div {
+    width: 1280px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+}
+header div h1 a{
+    position: absolute;
+    left: 0;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+/* main_visual 메인비주얼 */
+.main_visual {
+    width: 100%;
+    height: 800px;
+    background: url('../images/visual1-3.jpg') center center / cover no-repeat;/* html에서 작성하는것과 다른 경로 부르기 방식임-css폴더 바깥에 images폴더가 있으므로 images폴더 앞에 '../' 붙이기*/
+    background-attachment: fixed;
+    color: #fff; 
+    display: flex;
+    align-items:center;
+    justify-content: center; /* 가운데정렬 */
+}
+.main_visual div {
+    text-align: center;
+}
+.main_visual div h2 {
+    font-size: 70px;
+}
+.main_visual div p {
+    font-size: 40px;
+    margin-top: 25px;
+    color:rgba(255,255,255,0.7);
+}
+
+/* best portfolio 베스트 포트폴리오 */
+.best {
+    margin: 150px 0;
+}
+.best h3 {
+    font-size: 45px;
+    text-align: right;/* 1280px 중심에 맞추려면 width;1280, margin; 0 auto 추가해야함 */
+    width: 1280px;
+    margin: 0 auto; 
+    font-family: 'Nanum Pen Script', cursive;
+}
+.best .bg {
+    background-color: #eee;
+    padding: 100px 0;
+}
+.best .best_box {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 100px; 
+}
+.best .bg .best_box{
+    margin-bottom: 0px; 
+}
+.best .best_box .info {
+    width: 40%;
+}
+.best .best_box .info .cate {
+    font-size: 18px;
+    font-weight: bold;
+}
+.best .best_box .info h4 {
+    font-size: 30px; 
+}
+.best .best_box .info .text {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    line-height: 1.5; /* 현재 폰트 16px에서 1.5배 줄간격 띄워줌 16 x 1.5 = 24px */
+}
+.best .best_box .info dl {
+    display: flex;
+    margin-bottom: 10px;
+}
+.best .best_box .info dl dt {
+    width: 28%;
+    font-weight: bold;  
+}
+.best .best_box .info ul {
+    display: flex;
+    margin-top: 30px;
+}
+.best .best_box .info ul li {
+    border: 1px solid #333; 
+    margin-right: 10px;
+    height: 45px;
+    line-height: 45px;
+}
+.best .best_box .info ul li a {
+    padding: 0 10px;/* width로 테두리를 만들면 글자 수가 다르면 여백이 각기 달라져서 padding으로 함, li태그가 아닌 a 태그에 padding값을 주면 링크를 클릭하는 영역이 넓어짐 */
+}
+.best .best_box .info ul li:first-of-type {
+    background-color: #333;
+}
+.best .best_box .info ul li:first-of-type a {
+    color: #fff;
+}
+.best .best_box .youtube_list {
+    width: 55%;
+}
+.best .best_box .youtube_list div {
+    width: 100%;
+    padding-bottom: 56.25%;/* 16:9비율 */
+    position: relative;/* width 100%, 맞춰줘야함  */
+}
+.best .best_box .youtube_list div iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;/* width, height 100%, 맞춰줘야함  */
+    top: 0;
+    left: 0;
+}
+.best .best_box .web_design {
+    width: 55%;
+}
+.best .best_box .web_design figure img {
+    width: 100%; /* 이미지크기 55%사이즈에 맞춰짐 */
+}
+.best .best_box .info {
+    width:40%;
+}
+
+/* 카테고리별 유튜브 적용 */
+.youtube_wrap {
+    margin: 150px 0;
+}
+.youtube_wrap .youtube_menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.youtube_wrap .youtube_menu li{
+    border: 1px solid #ccc;
+    padding: 0 30px;
+    height: 45px;
+    line-height: 45px;
+    box-sizing: border-box;
+    margin: 0 5px;
+}
+.youtube_wrap .youtube_menu li.on{/* li의 클래스명 on에만 적용. 마침표 띄워쓰기 안함 */
+    background-color: #333;
+    box-shadow: 2px 3px 20px rgba(0,0,0,0.3);
+}
+.youtube_wrap .youtube_menu li.on a{
+    color: #fff;
+}
+.youtube_wrap .youtube_cont .menu_cont {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* 줄바꿈시켜줌 */
+    display:none;
+}
+.youtube_wrap .youtube_cont .menu_cont.on {
+    display:flex;
+}
+.youtube_wrap .youtube_cont .menu_cont .box {
+    width:49%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.youtube_list{
+    width: 100%; 
+}
+.youtube_list div {
+    width: 100%;
+    padding-bottom: 56.25%;
+    position: relative; /* 16:9화면에 띄우기위해 position:relative 써야함 */
+}
+.youtube_list iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    top: 0;
+    left: 0;
+}
+.youtube_wrap .menu_cont .box .info {
+    padding: 30px;
+}
+.info h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.info dl {
+    display: flex;
+    margin-bottom: 10px;
+}
+.info dl dt {
+    width: 20%;
+    font-weight: bold;
+}
+.info dl dd a {
+    font-weight: bold;
+}
+.info dl dd:hover a {
+    text-decoration: underline;
+}
+h3 {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* 2D 디자인 */
+.g_design {
+    background-color: #eee;
+    padding: 150px 0;
+}
+.g_design em {
+    width: 1280px;
+    margin: 0 auto;
+    text-align: right;
+    display: block;/* em은 인라인요소라서 display:block해줘야 정렬됨 */
+}
+.g_design .img_list {
+    width:1280px;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* 4개 이상 줄바꿈 시켜줌 */
+}
+.g_design .img_list div {
+    width: 24%;
+}
+.g_design .img_list div figure {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+.g_design .img_list div figure img{
+    transition: 0.8s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.g_design .img_list div ul {
+    padding:20px;
+    background-color: #fff;
+}
+.g_design .img_list div ul li:first-of-type {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+.g_design .img_list div:hover {
+    box-shadow: 2px 3px 20px rgba(0,0,0,0.3);
+}
+.g_design .img_list div:hover figure img{
+    transform: scale(1.2);
+}
+
+/* 푸터 footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+footer a{
+    color:#fff;
+}
+footer ul li {
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #fff;
+    margin: 10px auto;
+    border-radius: 50px;
+}
+footer ul li:first-of-type {
+    background-color: #fff;
+}
+footer ul li:first-of-type a {
+    color:#333;
+    font-weight: bold;
+}
+footer p {
+    font-size: 14px;
+    color:rgba(255,255,255,0.5);
+    margin-top: 20px;
+}
