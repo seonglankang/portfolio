@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3단레이아웃</title> 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+        *{margin:0; padding:0;}
+        li{list-style: none;}
+        html, body{color:#333;}
+        /* .main_visual */
+        .main_visual {
+            height: 1003px;
+            background:url('images/box1.png') center center / cover no-repeat;
+            padding-top: 395px;
+            box-sizing: border-box;
+        }
+        .main_visual div{
+            width:1200px;
+            margin:0 auto;
+        }
+        .main_visual div h2 {
+            font-size: 80px;
+            color: #cba286;
+            margin-bottom: 30px;
+        }
+        .main_visual div p {
+            font-size: 22px;
+            color: #8a8a8a;
+        }
+        /* .cont01 */
+        .cont01 {
+            width:1200px;
+            margin:150px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .cont01 div {
+            width:565px;
+        }
+        .cont01 div p:nth-of-type(1) {
+            margin: 40px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 40px;
+            color:#a1827a;
+        }
+        .cont01 div h3 {
+            font-size: 30px;
+        }
+        .cont01 div p:nth-of-type(2){
+            color: #8a8a8a;
+            line-height:35px;
+        }
+        .cont01 div p:nth-of-type(3){
+            width: 140px;
+            height:50px;
+            border: 1px solid #333;
+            text-align: center;
+            line-height: 50px;
+            margin-top: 40px;
+        }
+        /* .cont02 */
+        .cont02 {
+            height:470px;
+            background: url(images/box3.png) center center / cover no-repeat;
+            padding-top: 170px;
+            box-sizing:border-box;
+            color:#fff;
+            text-align:center;
+        }
+        .cont02 div h3 {
+            font-size: 35px;
+            font-weight:lighter; /* h3가 가진 굵기를 없앰 */
+            letter-spacing: -0.5px; /* 글자사이 간격 마이너스 수치는 좁아짐  */
+        }
+        .cont02 div p {
+            margin-top: 30px;
+            font-size:22px;  
+        }
+        /* .cont03 */
+        .cont03 {
+            padding: 150px 0;
+        }
+        .cont03 .title{
+            text-align:center;
+            margin-bottom:40px;
+        }
+        .cont03 .title p{
+            font-size: 40px;
+            color: #a1827a;
+            font-family: 'Dancing Script', cursive;
+        }
+        .cont03 .title h3{
+            font-size: 30px; 
+        }
+        .cont03 .box {
+            width:1200px;
+            margin:0 auto;
+            display:flex;
+            justify-content: space-between;
+        }
+        .footer {
+            height:80px;
+            line-height: 80px;
+            text-align: center;
+            background-color: #432e01;
+            color: rgba(255,255,255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="main_visual">
+        <div>
+            <h2>NATURE</h2>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. <BR /> Id perferendis temporibus porro repudiandae, exercitationem<br /> iste numquam nulla eos</P>
+        </div>
+    </div><!-- .main_visual end -->
+    <div class="cont01">
+        <div>
+            <p>wedding gift</p>
+            <h3>A PERFECT SPOT</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />Autem quidem magnam corporis incidunt necessitatibus dolorem <br />nisi ad quibusdaf</p>
+            <p>READ MORE</p>
+        </div>
+        <figure>
+            <img src="images/box2.png" alt="양귀비 꽃밭"
+        </figure>
+    </div><!-- .cont01 end -->
+    <div class="cont02">
+        <div> 
+            <h3>the art of fresher flowers</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi pariatur ut <br />quae eius obcaecati voluptate perspiciatis? Vero </p>
+        </div>
+    </div><!-- .cont02 end -->
+    <div class="cont03">
+        <div class="title">
+            <p>wedding gift</p>
+            <h3>OUR WONDERFUL ARRANGEMENTS</h3>
+        </div><!-- .title end -->
+        <DIV class="box">
+            <figure>
+                <img src="images/flower1.png" alt="꽃다발" />
+            </figure>
+            <figure>
+                <img src="images/flower2.png" alt="꽃다발" />
+            </figure>
+            <figure>
+                <img src="images/flower3.png" alt="꽃다발" />
+            </figure>
+            <figure>
+                <img src="images/flower4.png" alt="꽃다발" />
+            </figure>
+        </DIV><!-- .box end -->
+    </div><!-- .cont03 end -->
+    <div class="footer">
+        <p>Copyright 2022 by HASUJEONG. All Rights Reserved.</p> 
+    </div><!-- .footer end -->
+</body>
+</html>
