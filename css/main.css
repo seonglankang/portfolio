@@ -41,7 +41,7 @@ header div ul {
     margin: 0 auto;
     width: 1280px;
     justify-content: space-between;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
 }
 header div ul a{
@@ -196,6 +196,9 @@ header div ul li:hover a{
 .best h5 a{
     color: #333;
 }
+.best h5:hover a {
+    color: #fff;
+}
 
 /* 카테고리별 유튜브 적용 */
 .youtube_wrap {
@@ -320,6 +323,9 @@ h3 {
 .youtube_wrap h5 a{
     color: #fff;
 }
+.youtube_wrap h5:hover a {
+    color: #333;
+}
 
 /* 웹&앱 디자인 .web_design */
 .web_wrap { 
@@ -387,6 +393,22 @@ h3 {
     border-radius: 5px;
     color: #fff;
 }/* hover end */
+
+/* top */
+.web_wrap h5{
+    text-align: right;
+    width: 1280px;
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+}
+.web_wrap h5 a{
+    color: #000;
+}
+.web_wrap h5:hover a {
+    color: #fff;
+}
 
 
 /* 2D 디자인 */
@@ -460,6 +482,9 @@ background-color: rgba(255,255,255,0.5);
 .g_design h5 a{
     color: #fff;
 }
+.g_design h5:hover a {
+    color: #aaa;
+}
 
 /* 개인정보 .about */
 .about {
@@ -509,6 +534,22 @@ background-color: rgba(255,255,255,0.5);
 .about dl dt {
     margin-bottom: 5px;
     font-weight: bold;
+}
+
+/* top */
+.about h5{
+    text-align: right;
+    width: 1280px;
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+}
+.about h5 a{
+    color: #fff;
+}
+.about h5:hover a {
+    color: #000;
 }
 
 
