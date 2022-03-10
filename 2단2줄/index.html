@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2단2줄</title>
+    <style>
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+        .nanumgothic * {
+        font-family: 'Nanum Gothic', sans-serif;
+        }
+        @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+        *{margin:0; padding:0;}
+        li{list-style:none;}
+        html, body {
+            color:#333;
+            font-family: 'Nanum Gothic', sans-serif;/* 나눔고딕으로 설정안될 때 대체되는 폰트는 -sans-serif라는 뜻 */
+        }
+        /* .cont01 */
+        .cont01{
+            margin-top:85px;
+            margin-bottom: 150px;
+        }
+        .cont01 h3 {
+            font-family: 'NanumSquare'; 
+            font-weight: 800;
+            width:1280px;
+            margin:0 auto;
+            margin-bottom:56px;
+            font-size: 80px;
+            line-height: 80px; /* 줄과 줄사이 간격 font size와 같게 하면 그 만큼 띄워짐*/
+        }
+        .cont01 .box {
+            width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            justify-content:space-between;
+            margin-bottom: 30px;
+        }
+        .cont01 .box div figure img { 
+            display:block; 
+        }
+        .cont01 .box div ul {
+            padding: 60px 65px;
+            background-color: #ebeae6;
+        }
+        .cont01 .box div ul li:nth-of-type(1) {
+            font-size: 18px;
+        }
+        .cont01 .box div ul li:nth-of-type(2) {
+            font-size: 30px;
+            font-weight:bold;
+        }
+        .cont01 .box01 div:nth-of-type(1) ul {
+            background-color: #dcd6d4;
+        }
+        .cont01 .box01 div:nth-of-type(2) ul {
+            background-color: #cbc4bb;
+        }
+        .cont01 .box02 div:nth-of-type(1) ul {
+            background-color: wheat;
+        }
+        .cont01 .box02 div:nth-of-type(2) ul {
+            background-color: burlywood;
+        }
+        /* .cont02 */
+        .cont02 .title {
+            height:708px;
+            background-color: #ebebeb;
+            text-align:center;
+            padding-top: 100px;
+            box-sizing: border-box;
+        }
+        .cont02 .title h3 {
+            font-family: 'NanumSquare';
+            font-weight: 800;
+            font-size: 80px;
+        }
+        .cont02 .title p {
+            font-size: 18px;
+        }
+        .cont02 .box {
+            width:1280px;
+            margin: 0 auto;
+            display: flex; 
+            justify-content: space-between;
+            margin-top: -422px;
+        }
+        .cont02 .box ul {
+            background-color: #f9f9f9;
+            padding: 28px 20px 21px; /* 내부여백 : 위 좌우 아래 */ 
+        }
+        .cont02 .box ul li:nth-of-type(1) {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .cont02 .box ul li:nth-of-type(2) {
+            font-size:30px;
+            font-weight:bold;
+            margin-bottom: 25px;
+        }
+        .cont02 .box ul li:nth-of-type(3) { 
+            color: #909090 ;
+        }
+        .cont02 .box div figure img {
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont01">
+        <h3>best<br />review</h3>
+        <div class="box box01">
+            <div>
+                <figure>
+                    <img src="images/box1.png" alt="알파 알부틴 카페인 솔루션" />
+                </figure>
+                <ul>
+                    <li>기미/색소침착 완화 세럼</li>
+                    <li>알파 알부틴 카페인 솔루션</li>
+                </ul>
+            </div>
+            <div>
+                <figure>
+                    <img src="images/box2.png" alt="알파 알부틴 카페인 솔루션" />
+                </figure>
+                <ul>
+                    <li>기미/색소침착 완화 세럼</li>
+                    <li>알파 알부틴 카페인 솔루션</li>
+                </ul>
+            </div>
+        </div><!-- .box end -->
+        <div class="box box02">
+            <div>
+                <figure>
+                    <img src="images/box3.png" alt="알파 알부틴 카페인 솔루션" />
+                </figure>
+                <ul>
+                    <li>기미/색소침착 완화 세럼</li>
+                    <li>알파 알부틴 카페인 솔루션</li>
+                </ul>
+            </div>
+            <div>
+                <figure>
+                    <img src="images/box4.png" alt="알파 알부틴 카페인 솔루션" />
+                </figure>
+                <ul>
+                    <li>기미/색소침착 완화 세럼</li>
+                    <li>알파 알부틴 카페인 솔루션</li>
+                </ul>
+            </div>
+
+        </div><!-- .box end -->
+    </div><!-- .cont01 end -->
+    <div class="cont02">
+        <div class="title">
+            <h3>한샘 매장에서 전문상담을 받아보세요</h2>
+            <p>전문 상담원이 실제 주거환경에 맞춘 공간디자인을 제안합니다.<br />
+            한샘에서 가족의 재충전 공간을 설계해 보세요.</p>
+        </div><!-- .title end -->
+        <div class="box">
+            <div>
+                <figure>
+                    <img src="images/hbox1.png" alt="[복합매장] 한샘 디자인파크" />
+                </figure>
+                 <ul>
+                    <li>[복합매장] 한샘 디자인파크</li>
+                    <li>롯데메종동부산점</li>
+                    <li>리모델링 l 키친&바스 l 빌트인수납 l 가구 l 생활용품</li> 
+                </ul>
+            </div>
+            <div>
+                <figure>
+                    <img src="images/hbox2.png" alt="[복합매장] 한샘 디자인파크" />
+                </figure>
+                 <ul>
+                    <li>[복합매장] 한샘 디자인파크</li>
+                    <li>롯데광복점</li>
+                    <li>리모델링 l 키친&바스 l 빌트인수납 l 가구 l 생활용품</li> 
+                </ul>
+            </div>
+            <div>
+                <figure>
+                    <img src="images/hbox3.png" alt="[복합매장] 한샘 디자인파크" />
+                </figure>
+                 <ul>
+                    <li>[복합매장] 한샘 디자인파크</li>
+                    <li>롯데목동점</li>
+                    <li>리모델링 l 키친&바스 l 빌트인수납 l 가구 l 생활용품</li> 
+                </ul>
+            </div>
+        </div><!-- .box end -->
+    </div><!-- .cont02 end -->
+</body>
+</html>
