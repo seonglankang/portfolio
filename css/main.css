@@ -146,6 +146,9 @@ header div ul li:hover a{
     height: 45px;
     line-height: 45px;
 }
+.best .best_box .info dl dd a {
+    color: #333;
+}
 .best .best_box .info ul li a {
     padding: 0 10px;/* width로 테두리를 만들면 글자 수가 다르면 여백이 각기 달라져서 padding으로 함, li태그가 아닌 a 태그에 padding값을 주면 링크를 클릭하는 영역이 넓어짐 */
 }
@@ -156,6 +159,7 @@ header div ul li:hover a{
 .best .best_box .info ul li:first-of-type a {
     color: #fff;
 }
+
 
 /* hover */
 .best .best_box .info ul li:first-of-type:hover a {
@@ -310,14 +314,7 @@ h3 {
     text-decoration: underline;
     color:#333;
 }
-.info li a{
-    font-weight: bold;
-    color:#333;
-}
-.info li :hover a {
-    text-decoration: underline;
-    color:#333;
-}
+
 
 /* top */
 .youtube_wrap h5{
