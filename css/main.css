@@ -306,7 +306,7 @@ h3 {
 }
 .info dl dd a {
     font-weight: bold;
-    color:#333;
+    color:#eee;
 }
 .info dl dd:hover a {
     text-decoration: underline;
