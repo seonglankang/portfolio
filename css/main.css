@@ -146,7 +146,10 @@ header div ul li:hover a{
     height: 45px;
     line-height: 45px;
 }
-.best .best_box .info dl dd a {
+.best .best_box .info dl dd:first-of-type:a {
+    color: #fff;
+}
+.best .best_box .info dl dd:nth-of-type(2):a {
     color: #333;
 }
 .best .best_box .info ul li a {
