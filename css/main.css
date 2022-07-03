@@ -136,7 +136,7 @@ header div ul li:hover a{
     width: 28%;
     font-weight: bold;  
 }
-.best .best_box .info2 dl dd a{
+.best .best_box .info dl dd:nth-of-type(2) {
     color: #333;
 }
 .best .best_box .info ul {
