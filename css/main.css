@@ -136,6 +136,9 @@ header div ul li:hover a{
     width: 28%;
     font-weight: bold;  
 }
+.best .best_box .info2 dl dd a{
+    color: #333;
+}
 .best .best_box .info ul {
     display: flex;
     margin-top: 30px;
