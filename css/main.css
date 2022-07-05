@@ -208,8 +208,8 @@ header div ul li:hover a{
 /* 카테고리별 유튜브 적용 */
 .youtube_wrap {
     PADDING: 150px 0;
-    background-color: rgba(0,0,0,0.3); 
-    COLOR: #EEE;
+    background-color: rgba(255,255,255,0.1); 
+    COLOR: #fff;
 }
 h3 {
     font-size: 45px;
