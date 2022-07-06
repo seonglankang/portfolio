@@ -3,11 +3,11 @@
 li{list-style: none;}
 a {
     text-decoration: none;
-    color: #333;
+    color: #eee;
     display: block;
 }
 html, body{
-    color: #333;
+    color: #eee;
     min-width:1280px;/* 최소 너비 1280px 모바일 */
     background: url('../images/2.jpg') center center / cover no-repeat;
     font-family: 'NanumBarunGothic';
