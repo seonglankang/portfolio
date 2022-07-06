@@ -9,7 +9,7 @@ a {
 html, body{
     color: #333;
     min-width:1280px;/* 최소 너비 1280px 모바일 */
-    background: url('../images/IMG_6828.jpg') center center / cover no-repeat;
+    background: url('../images/2.jpg') center center / cover no-repeat;
     font-family: 'NanumBarunGothic';
 }
 header {
